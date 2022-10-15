@@ -7,6 +7,7 @@ import {User} from "./components/Users/User"
 import * as UserService from './components/Users/UserService'
 import UserItem from './components/Users/UserItem'
 import 'bootswatch/dist/minty/bootstrap.min.css'
+import Navbar from './components/NavBar/Navbar';
 
 /*interface IState {
   people: {
@@ -64,6 +65,7 @@ useEffect(() => {
 }, [])
 
   return (
+   
     <div className="App">
       {users.map((user) => {
         return <UserItem user = {user} />
